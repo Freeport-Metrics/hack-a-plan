@@ -12,6 +12,10 @@ var app = app || {};
 		// Default attributes for the todo
 		// and ensure that each todo created has `title` and `completed` keys.
 		defaults: {
+		  id: 0,
+		  tags: '', // TODO: should be collection of tags?
+		  username: '', // TODO: relate to user model later
+		  date: null,
 			title: '',
 			completed: false
 		},

@@ -11,6 +11,7 @@ var app = app || {};
 	app.TodoView = Backbone.View.extend({
 		//... is a div tag.
 		tagName:  'div',
+		tagClass: 'view col-sm-4',
 
 		// Cache the template function for a single item.
 		template: _.template($('#item-template').html()),
@@ -35,6 +36,8 @@ var app = app || {};
 
 		// Re-render the titles of the todo item.
 		render: function () {
+		  this.$el.addClass('view');
+		  this.$el.addClass('col-md-12');
 			this.$el.html(this.template(this.model.toJSON()));
 			this.$el.toggleClass('completed', this.model.get('completed'));
 			this.toggleVisible();

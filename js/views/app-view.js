@@ -28,6 +28,8 @@ var app = app || {};
 		initialize: function () {
 			this.allCheckbox = this.$('#toggle-all')[0];
 			this.$input = this.$('#new-todo');
+			this.$taskId = this.$('#new-taskId');
+			this.$tags = this.$('#new-tags');
 			this.$footer = this.$('#footer');
 			this.$main = this.$('#main');
 
@@ -91,9 +93,10 @@ var app = app || {};
 		newAttributes: function () {
 			return {
 				title: this.$input.val().trim(),
+				taskId: this.$taskId.val().trim(),
+				tags: this.$tags.val().trim(),
 				order: app.todos.nextOrder(),
-				completed: false,
-				taskId: app.todos.nextOrder()
+				completed: false
 
 			};
 		},

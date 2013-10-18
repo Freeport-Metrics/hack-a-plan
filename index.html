@@ -17,21 +17,21 @@
   
         <div class="snap-drawers">
             <div class="snap-drawer snap-drawer-left">
-                <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-1"">
                     <h2>Tasks</h2>
           					<section id="todoapp">
-          						<header id="header">
-          							<input id="new-todo" placeholder="What needs to be done?" autofocus>
-          						</header>
           						<section id="main">
           							<input id="toggle-all" type="checkbox">
           							<label for="toggle-all">Mark all as complete</label>
-          							<div class="row">
-          								<div id="todo-list"></div>
-          							</div>
+          							<div id="todo-list" class="row"></div>
           						</section>
-          						<footer id="footer"></footer>
+          						  <h4>Add tasks:</h4>
+          							<input id="new-taskId" placeholder="Ticket id?">
+          							<input id="new-tags" placeholder="Tag?">
+          							<input id="new-todo" placeholder="What needs to be done?">          							          						  
           					</section>
+          					</div>
                 </div>
             </div>
             <div class="snap-drawer snap-drawer-right"></div>
@@ -156,21 +156,17 @@
 		</footer>
 
 		<script type="text/template" id="item-template">
-		  <div class="view col-lg-4">
-          <h4>#24501 <span class="glyphicon glyphicon-<%= tags %>"></span></h4>
-          <p>
+          <h2>                             
+          #<%= taskId %> <span class="glyphicon glyphicon-<%= tags %>"></span>
+          </h2>
           <button type="button" class="toggle btn btn-default btn-sm">
-            <%= completed ? '<span class="glyphicon glyphicon-ok"></span>' : '-' %>            
-          </button>          
-          <a class="btn btn-default" href="#"><%- title %> &raquo;</a>
+            <span class="glyphicon glyphicon-<%= completed ? 'ok' : 'unchecked' %>"></span>          
+          </button>
+          <label><%- title %></label>
           <button type="button" class="btn btn-default btn-sm">
             <span class="destroy glyphicon glyphicon-remove"></span>
-          </button>          
-          </p>                    		  
-			</div>
+          </button>
 		</script>
-
-
 
         <script type="text/javascript" src="js/libs/snap.js"></script>
         <script type="text/javascript">

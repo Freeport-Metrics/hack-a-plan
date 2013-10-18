@@ -23,7 +23,21 @@ addEvent(document.getElementById('open-left'), 'click', function(){
     }
 })(document, window.navigator, "standalone");
 
+
+
 $(".task-container").shapeshift({
     minColumns: 2,
-    maxColumns: 2
+    maxColumns: 2,
+    colWidth: 10
 });
+
+
+$(".tasklist-container").shapeshift({
+    minColumns: 1,
+    maxColumns: 1,
+    colWidth: 10,
+    minHeight: 500,
+    autoHeight: true
+});
+
+

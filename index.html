@@ -18,20 +18,24 @@
         <div class="snap-drawers">
             <div class="snap-drawer snap-drawer-left">
                 <div class="row">
-                    <div class="col-md-12 col-md-offset-1"">
+                    <div class="col-md-12 col-md-offset-1">
                     <h2>Tasks</h2>
+
           					<section id="todoapp">
+                      <section>
+                        <h4>Add tasks:</h4>
+                        <input id="new-taskId" placeholder="Ticket id?">
+                        <input id="new-tags" placeholder="Tag?">
+                        <input id="new-todo" placeholder="What needs to be done?">
+                      </section>
           						<section id="main">
           							<input id="toggle-all" type="checkbox">
           							<label for="toggle-all">Mark all as complete</label>
-          							<div id="todo-list" class="row"></div>
+          							<div id="todo-list" class="row tasklist-container"></div>
           						</section>
-          						  <h4>Add tasks:</h4>
-          							<input id="new-taskId" placeholder="Ticket id?">
-          							<input id="new-tags" placeholder="Tag?">
-          							<input id="new-todo" placeholder="What needs to be done?">          							          						  
           					</section>
           					</div>
+
                 </div>
             </div>
             <div class="snap-drawer snap-drawer-right"></div>
@@ -43,9 +47,22 @@
                 <a href="#" id="open-left"></a>
                 <h1>Low-level Plan</h1>
 
+<div class="table-wrapper">
+
                 <table class="table">
+                  <thead>
+                  <tr>
+                    <th>Person</th>
+                    <th>10/18/2013</th>
+                    <th>10/19/2013</th>
+                    <th>10/20/2013</th>
+                    <th>10/21/2013</th>
+                    <th>10/22/2013</th>
+                  </tr>
+                </thead>
                   <tbody>
                     <tr>
+                      <td>Andrew</td>
                       <td>
                         <div class="container task-container">
                           <div></div>
@@ -79,6 +96,7 @@
                     </tr>
 
                     <tr>
+                    <td>Daria</td>
                       <td>
                         <div class="container task-container">
                           <div></div>
@@ -112,6 +130,7 @@
                     </tr>
 
                     <tr>
+                    <td>Mateusz</td>
                       <td>
                         <div class="container task-container">
                           <div></div>
@@ -139,13 +158,13 @@
                       <td>
                         <div class="container task-container">
                           <div></div>
-                          <div></div>
+                          <div>ererg</div>
                         </div>
                       </td>
                     </tr>
                   </tbody>
                 </table>
-                
+                 </div>
                 <div id="do-drag"><--- Drag Handle ---></div>                
                 
             </div>

@@ -41,7 +41,7 @@
 <div id="content" class="snap-content">
             <div id="toolbar">
                 <a href="#" id="open-left"></a>
-                <h1></h1>
+                <h1>Low-level Plan</h1>
 
                 <table class="table">
                   <tbody>
@@ -145,6 +145,9 @@
                     </tr>
                   </tbody>
                 </table>
+                
+                <div id="do-drag"><--- Drag Handle ---></div>                
+                
             </div>
         </div>
 
@@ -173,6 +176,7 @@
         <script type="text/javascript">
             var snapper = new Snap({
                 element: document.getElementById('content'),
+                dragger: document.getElementById('do-drag'),
                 disable: 'right'
             });
         </script>

@@ -24,5 +24,6 @@ addEvent(document.getElementById('open-left'), 'click', function(){
 })(document, window.navigator, "standalone");
 
 $(".container").shapeshift({
-    minColumns: 3
+    minColumns: 2,
+    maxColumns: 2
 });

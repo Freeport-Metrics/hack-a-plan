@@ -14,11 +14,11 @@ var app = app || {};
 		defaults: function(){
 			return {
 			  taskId: 1,
-			  tags: '', // TODO: should be collection of tags?
+			  tags: 'plane', // TODO: should be collection of tags?
 			  username: '', // TODO: relate to user model later
 			  date: null,
 				title: '',
-				completed: false
+				completed: true
 			}
 		},
 

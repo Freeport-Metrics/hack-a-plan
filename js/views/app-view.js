@@ -53,10 +53,6 @@ var app = app || {};
 				this.$main.show();
 				this.$footer.show();
 
-				this.$footer.html(this.statsTemplate({
-					completed: completed,
-					remaining: remaining
-				}));
 
 				this.$('#filters li a')
 					.removeClass('selected')

@@ -13,7 +13,7 @@ var app = app || {};
 		// and ensure that each todo created has `title` and `completed` keys.
 		defaults: function(){
 			return {
-			  id: 0,
+			  taskId: 1,
 			  tags: '', // TODO: should be collection of tags?
 			  username: '', // TODO: relate to user model later
 			  date: null,

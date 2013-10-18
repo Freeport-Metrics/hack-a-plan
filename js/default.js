@@ -23,7 +23,7 @@ addEvent(document.getElementById('open-left'), 'click', function(){
     }
 })(document, window.navigator, "standalone");
 
-$(".container").shapeshift({
+$(".task-container").shapeshift({
     minColumns: 2,
     maxColumns: 2
 });

@@ -60,6 +60,13 @@ var app = app || {};
 					.removeClass('selected')
 					.filter('[href="#/' + (app.TodoFilter || '') + '"]')
 					.addClass('selected');
+				$(".tasklist-container").shapeshift({
+			    minColumns: 2,
+			    maxColumns: 2,
+			    colWidth: 10,
+			    minHeight: 500,
+			    autoHeight: true
+			});
 			} else {
 				this.$main.hide();
 				this.$footer.hide();
@@ -109,7 +116,15 @@ var app = app || {};
 			}
 
 			app.todos.create(this.newAttributes());
+			$(".tasklist-container").shapeshift({
+			    minColumns: 2,
+			    maxColumns: 2,
+			    colWidth: 10,
+			    minHeight: 500,
+			    autoHeight: true
+			});
 			this.$input.val('');
+
 		},
 
 		// Clear all completed todo items, destroying their models.

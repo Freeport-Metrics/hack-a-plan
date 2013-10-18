@@ -3,7 +3,7 @@
   "tags": "pencil",
   "username": "",
   "date": null,
-  "title": "Buy lightsaber",
+  "title": "Pick a theme",
   "completed": false
 },
 {
@@ -11,7 +11,7 @@
   "tags": "plane",
   "username": "",
   "date": null,
-  "title": "Build Deathstar",
+  "title": "Lock down a venue",
   "completed": false
 },
 {
@@ -19,6 +19,24 @@
   "tags": "flash",
   "username": "",
   "date": null,
-  "title": "Use The Force",
+  "title": "Secure sponsorships",
   "completed": false
-}]
+},
+  {
+    "taskId": 4,
+    "tags": "flash",
+    "username": "",
+    "date": null,
+    "title": "Rally the interested parties",
+    "completed": true
+  }
+  ,
+    {
+      "taskId": 5,
+      "tags": "flash",
+      "username": "",
+      "date": null,
+      "title": "Market like heck to potential attendees",
+      "completed": true
+      }
+  ]

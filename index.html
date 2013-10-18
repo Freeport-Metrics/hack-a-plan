@@ -157,11 +157,10 @@
 
 		<script type="text/template" id="item-template">
           <h2>                             
-          #<%= taskId %> <span class="glyphicon glyphicon-<%= tags %>"></span>
-          </h2>
-          <button type="button" class="toggle btn btn-default btn-sm">
-            <span class="glyphicon glyphicon-<%= completed ? 'ok' : 'unchecked' %>"></span>          
-          </button>
+            <button type="button" class="toggle btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-<%= completed ? 'ok' : 'unchecked' %>"></span>          
+            </button> #<%= taskId %> <span class="glyphicon glyphicon-<%= tags %>"></span>
+          </h2>          
           <label><%- title %></label>
           <button type="button" class="btn btn-default btn-sm">
             <span class="destroy glyphicon glyphicon-remove"></span>
